@@ -4,6 +4,22 @@ local opt = vim.opt -- For conciseness
 opt.relativenumber = false
 opt.number = true
 
+-- Shortcuts for toggling relativenumber and number
+vim.keymap.set("n", "<leader>rd", function()
+  vim.opt.relativenumber = false
+end)
+vim.keymap.set("n", "<leader>re", function()
+  vim.opt.relativenumber = true
+end)
+vim.keymap.set("n", "<leader>lt", function()
+  if vim.opt.number then
+    vim.opt.number = false
+  else
+    vim.opt.number = true
+  end
+end)
+
+
 -- tabs & indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
