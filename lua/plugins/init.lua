@@ -9,6 +9,8 @@ local M = {
   { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true },
   { 'rose-pine/neovim', name = 'rose-pine' },
   { "kdheepak/monochrome.nvim" },
+  { "sainnhe/gruvbox-material" },
+  { "savq/melange-nvim" },
 
   -- Comments
   { 
