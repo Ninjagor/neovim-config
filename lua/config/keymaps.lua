@@ -5,6 +5,11 @@ local keymap = vim.keymap -- for simplicity
 
 -- general keymaps
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- To clear search highlights
+keymap.set("n", "j", "gj")
+keymap.set("n", "k", "gk")
+
+keymap.set("v", "j", "gj")
+keymap.set("v", "k", "gk")
 
 keymap.set("n", "x", "x")
 -- keymap.set("n", "x", "_x") -- Does not copy letter to register when deleting
@@ -33,6 +38,8 @@ keymap.set("n", "<leader>jl", ":wincmd l<CR>") -- Cycle right
 keymap.set("n", "<leader>jh", ":wincmd h<CR>") -- Cycle left
 keymap.set("n", "<C-j>", ":wincmd j<CR>") -- Cycle down
 keymap.set("n", "<C-k>", ":wincmd k<CR>") -- Cycle up
+
+keymap.set("n", "<C-s>", ":w<CR>")
 
 -- Plugin Keymaps
 
