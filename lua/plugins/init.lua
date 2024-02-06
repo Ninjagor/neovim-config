@@ -11,7 +11,8 @@ local M = {
   { "kdheepak/monochrome.nvim" },
   { "sainnhe/gruvbox-material" },
   { "savq/melange-nvim" },
-
+  -- Current Theme
+  {"ramojus/mellifluous.nvim"},
   -- Comments
   { 
     "numToStr/Comment.nvim",

@@ -76,6 +76,12 @@ return {
       on_attach = on_attach,
     })
 
+    -- configure rust-analyzer server 
+    lspconfig["rust_analyzer"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
       capabilities = capabilities,
