@@ -2,7 +2,12 @@
 local M = {
   -- Global plugins
   { "nvim-lua/plenary.nvim" },
-  
+  -- { 'echasnovski/mini.nvim', version = '*', lazy = false, priority = 300,
+  -- config = function() 
+  --     require("mini.nvim").setup({})
+  --   end
+  -- },
+  { "windwp/nvim-autopairs", config = function() require('nvim-autopairs').setup() end },
   -- Colorschemes
   { "bluz71/vim-nightfly-guicolors" },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
@@ -90,37 +95,5 @@ local M = {
     lazy = false,
     priority = 200,
   },
-  -- {
-  --   "hrsh7th/nvim-cmp",
-  --   lazy = false,
-  --   priority = 200,
-  -- },
-  -- {
-  --   "hrsh7th/cmp-buffer",
-  --   lazy = false,
-  --   priority = 200,
-  -- },
-  -- {
-  --   "hrsh7th/cmp-path",
-  --   lazy = false,
-  --   priority = 200,
-  -- },
-  -- {
-  --   "L3MON4D3/LuaSnip",
-  --   lazy = false,
-  --   priority = 200,
-  --
-  -- },
-  -- {
-  --   "saadparwaiz1/cmp_luasnip",
-  --   lazy = false,
-  --   priority = 200,
-  --
-  -- },
-  -- {
-  --   "rafamadriz/friendly-snippets",
-  --   lazy = false,
-  --   priority = 200,
-  -- },
 }
 return M

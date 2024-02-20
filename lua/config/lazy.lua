@@ -8,7 +8,11 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     { import = "plugins.lsp" },
-    { import = "plugins.config" },
+   --  { import = "plugins.config" },
+   { import = "plugins.config.treesitter" },
+  { import = "plugins.config.bufferline" },
+  { import = "plugins.config.harpoon" },
+
   },
   defaults = {
     lazy = false,
