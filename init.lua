@@ -10,4 +10,5 @@ require("config.colorscheme")
 -- require("plugins.config.mason")
 -- require("plugins.config.lspconfig")
 
-
+vim.cmd[[ :COQnow -s ]]
+vim.cmd [[ :echo "started coq client" ]]

@@ -1,13 +1,20 @@
 -- Lazy plugin table export
+
 local M = {
   -- Global plugins
   { "nvim-lua/plenary.nvim" },
+
+
   -- { 'echasnovski/mini.nvim', version = '*', lazy = false, priority = 300,
   -- config = function() 
   --     require("mini.nvim").setup({})
   --   end
   -- },
   { "windwp/nvim-autopairs", config = function() require('nvim-autopairs').setup() end },
+  { "ms-jpq/coq_nvim", branch = "coq", config = function() require('coq') end },
+
+  { "j-morano/buffer_manager.nvim",lazy = false },
+
   -- Colorschemes
   { "bluz71/vim-nightfly-guicolors" },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },

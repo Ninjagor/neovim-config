@@ -12,6 +12,7 @@ require("lazy").setup({
    { import = "plugins.config.treesitter" },
   { import = "plugins.config.bufferline" },
   { import = "plugins.config.harpoon" },
+    -- { import = "plugins.config.nvim-cmp" }
 
   },
   defaults = {

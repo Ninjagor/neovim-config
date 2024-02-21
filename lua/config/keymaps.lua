@@ -14,6 +14,11 @@ keymap.set("v", "k", "gk")
 keymap.set("n", "x", "x")
 -- keymap.set("n", "x", "_x") -- Does not copy letter to register when deleting
 
+
+-- Buffer editor cmds
+keymap.set("n", "<leader>ob", ':lua require("buffer_manager.ui").toggle_quick_menu()<CR>', { silent = true })
+
+
 keymap.set("n", "<leader>+", "<C-a>") -- Increment number under cursor
 keymap.set("n", "<leader>-", "<C-x>") -- Decrement number under cursor
 
